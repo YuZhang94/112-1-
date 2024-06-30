@@ -1,0 +1,19 @@
+p.tit1{
+    text-indent:2pc ;
+}
+#table2{background-color: #AFC8AD;}
+body{
+    background-color: #F2F1EB;
+}
+table{
+    background-color: #EEE7DA;
+}
+tr{
+    background-color: #EEE7DA;
+}
+th{
+    font-family: "標楷體","新細明體";font-size: xx-large;
+}
+td{
+    font-family: "新細明體","Arial";font-size: medium;
+}

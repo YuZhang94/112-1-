@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>網頁設計期末作業</title>
+    <link rel="stylesheet" type="text/css" href="期末作業.css" />
+    <link rel="icon" href="高科大.png" type="image/x-icon" />
+</head>
+
+<body>
+    <div class="frame">
+        <p> <img src="高科大.png" height="95px"> </p>
+        <div class="left">
+            <div id="cantainer">
+                課程簡介-微積分Calculus    
+            </div>
+            
+        </div>
+        <div class="right">
+            <div class="item"><a href="index.html" class="link">首頁</a></div>
+            <div class="item"><a href="https://ic.nkust.edu.tw/" class="link" target="_blank">關於智商系</a></div>
+            <div class="item"><a href="https://www.7-11.com.tw/" class="link" target="_blank">景點美食</a></div>
+            <div class="item"><a href="connect.html" class="link">聯絡我們</a></div>
+            <div class="item"><a href="會員註冊練習\C112156205_註冊帳號.html" class="link">學生登入</a></div>
+        </div>
+    </div>
+
+    <div class="frame">
+        <div class="left2">
+            <div class="align_left">
+                課堂師資簡介
+            </div>
+            <div class="align_left">
+                <img src="Calculus_teacher.jpg" height="230px" width="180"/><br>
+                黃天受 教授
+            </div>
+            <div class="Content">
+                <table>
+                    <tr>
+                        <td>分機：</td>
+                        <td>燕巢 17555</td>
+                    </tr>
+                    <tr>
+                        <td>電郵：</td>
+                        <td>tenso@nkust.edu.tw</td>
+                    </tr>
+                    <tr>
+                        <td>學歷：</td>
+                        <td>國立臺灣科技大學 工業管理系 博士</td>
+                    </tr>
+                    <tr>
+                        <td>專業：</td>
+                        <td>存貨控制與管理, 作業管理, 統計, 微積分</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="align_left">
+                <hr>
+                課程推薦用書<br>
+                <img src="Calculus_book.jpg" height="230px" width="180px"/>
+            </div>
+            <div class="Content">
+                書名：微積分(第五版)<br>
+                作者：黃天受、周開華、田絢綺、陳昆助、程覺敏<br>
+                出版社：滄海圖書
+            </div>
+        </div>
+        
+        <div class="right">
+            <iframe src="期末/Calculus.html"
+                frameborder="0"
+                width="1000px"
+                height="95%"
+                sandbox="allow-modals allow-forms allow-pointer-lock allow-popups allow-same-origin allow-scripts">
+            看不到頁面時才會顯示這行文字
+            </iframe>
+        </div>
+    </div>
+
+    <div class="align_left">
+        <button onclick="getScore()" style="font-weight: bold;">
+            學期成績計算
+            <div style="font-size: 12px;">
+                (假設點名都有到)
+            </div>
+        </button>
+    </div>
+
+
+    <script>
+        function getScore(){
+            var Quiz, Mid_exam, Final_exam, result;
+            var test = "";
+            Quiz = window.prompt("請輸入平時小考(4次)加總: ", "");
+            if(Quiz==test){
+                window.alert("請重新輸入");
+                return
+            }
+            Mid_exam = prompt("請輸入期中考成績", "");
+            if(Mid_exam==test){
+                window.alert("請重新輸入");
+                return
+            }
+            Final_exam = prompt("請輸入期末考成績", "");
+            if(Final_exam==test){
+                window.alert("請重新輸入")
+                return
+            }
+
+            else{
+                result = 20+Quiz*0.3+Mid_exam*0.2+Final_exam*0.3;
+                result = result.toFixed(2);
+                window.alert("您的學期成績預估是"+result+"分")
+            }
+
+            }   
+    </script>
+</body>
+</html>

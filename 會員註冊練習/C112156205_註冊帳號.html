@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>網頁設計期末作業</title>
+        <meta charset="utf-8">
+        <meta name="auto" content="YuZhang Chen">
+        <link rel="stylesheet" type="text/css" href="../期末作業.css" />
+        <link rel="icon" href="../高科大.png" type="image/x-icon" />
+
+        <style>
+            body{
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            .P{width: 100% ; height: 30; background-color: #f7efe7; padding: 10 10 10 10;}
+        </style>
+    </head>
+    
+    <body>
+        <div class="frame">
+            <p> <img src="../高科大.png" height="95px"> </p>
+            <div class="left">
+                <div id="cantainer">國立高雄科技大學 學生登入系統</div>
+            </div>
+            <div class="right">
+                <div class="item"><a href="../index.html" class="link">首頁</a></div>
+                <div class="item"><a href="https://ic.nkust.edu.tw/" class="link" target="_blank">關於智商系</a></div>
+                <div class="item"><a href="https://www.7-11.com.tw/" class="link" target="_blank">景點美食</a></div>
+                <div class="item"><a href="../connect.html" class="link">聯絡我們</a></div>
+        </div></div>
+        
+        <table align="center">
+            
+        <tr>
+            <td>
+                <form action="https://httpbin.org/post" method="post">
+                    請輸入帳號： <input type="text" name="text" placeholder="account">
+                    <p> 請輸入密碼： <input type="password" name="password" placeholder="password"></p>
+                    <p> 確認密碼： <input type="password" name="password" placeholder="check password"></p>
+                    <p> 公開暱稱： <input type="text" name="text" placeholder="username"></p>
+                    <p> 真實姓名(不公開)： <input type="text" name="text" placeholder="name"></p>
+                    <p> 出生年月日： <input type="date" name="date" value="date"></p>
+                    <p> 電子郵件：<input type="email" name="email" placeholder="Email"></p>
+                    <p> 電話號碼：<input type="text" name="text" placeholder="cellphone"></p>
+                    <p> 系所：
+                        <select name="select">
+                            <option>請選擇您的系所</option>
+                            <option value="value1">智慧商務系</option>
+                            <option value="value2">會計資訊系</option>
+                            <option value="value3">金融資訊系</option>
+                            <option value="value4">財政稅務系</option>
+                            <option value="value5">國際企業系</option>
+                            <option value="value6">企業管理系</option>
+                            <option value="value7">觀光管理系</option>
+                            <option value="value8">車輛工程系</option>
+                            <option value="value9">文化創意產業系</option>
+                            <option value="value10">人力資源發展系</option>
+                            <option value="value11">能源與冷凍空調工程系</option>
+                        </select>
+                    </p>
+                    <p> 喜歡的顏色： <input type="color" name="color" value="RGB"> </p>
+                    <p> 從哪裡得知此網站：
+                        <input type="radio" name="radio" value="radio1">親友介紹
+                        <input type="radio" name="radio" value="radio2">網路廣告
+                        <input type="radio" name="radio" value="radio3">師長推薦
+                        <input type="radio" name="radio" value="radio4">自行發現  
+                        <b>其他：</b><input type="text" name="text">
+                    </p>
+                    <p> 是否接收此網站的通知 (打勾即可接收通知)：<input type="checkbox" name="checkbox" value="checkbox1"> </p>
+                    <p> 請問對於何種主題較感興趣？ </p>
+
+                    <select name="select2" size="5">
+                        <option>無</option>
+                        <option value="value1">美食</option>
+                        <option value="value2">潮流時尚</option>
+                        <option value="value3">美妆</option>
+                        <option value="value4">寵物</option>
+                        <option value="value5">出遊</option>
+                        <option value="value6">萌娃</option>
+                        <option value="value7">家居生活</option>
+                        <option value="value8">遊戲</option>
+                    </select>
+
+                    <p align="center">
+                        <input type="submit" name="Submit" value="確定送出">
+                        <input type="reset" name="Reset" value="清空選項">
+                    </p>            
+                </from>
+            </td>
+        </tr>
+        </table>
+        <div class="P">
+            <i><p align="right"><font size=5 color=black>此註冊畫面參考
+                <a href="https://zerojudge.tw/InsertUser">Zerojudge高中生程式解題系統</a></font></p></i>
+        </div>
+        <div class="Team_members">
+            <div class="align_left">
+                <b>小組成員：陳禹璋、吳書逸、李宇辰</b>
+            </div>
+        </div>
+
+    </body>
+</html>
